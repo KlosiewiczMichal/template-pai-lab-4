@@ -11,4 +11,4 @@ Wersja: v1.0.0
 Imię i nazwisko studenta:   Michał Kłosiewicz
 Numer albumu:               69095  
 Grupa studencka:            WEL18ET1S1  
-Data realizacji zajęć:      15.06.2021 r.  
+Data realizacji zajęć:      15.06.2021 r. 
