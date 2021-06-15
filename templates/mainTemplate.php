@@ -48,7 +48,7 @@
           $portal->showSearchForm();
           break;
         case 'searchBook':
-          //Wyszukanie książki
+          $portal->showBookDetails();
           break;
         case 'showBookDetails':
           //Wyświetlenie szczegółowych informacji o książce
