@@ -48,10 +48,11 @@
           $portal->showSearchForm();
           break;
         case 'searchBook':
-          $portal->showBookDetails();
+          $portal->showSearchForm();
+          $portal->showSearchResult();
           break;
         case 'showBookDetails':
-          //Wyświetlenie szczegółowych informacji o książce
+          $portal->showBookDetails();
           break;
         case 'showBasket':
           //Wyświetlenie zawartości koszyka
@@ -74,11 +75,8 @@
       ?>
     </div>
   </div>
-
   <div id="footerDiv" class="scafoldingDiv">
     <p>Stopka strony</p>
   </div>
-
 </body>
-
 </html>

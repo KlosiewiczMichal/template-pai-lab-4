@@ -138,7 +138,7 @@ class PortalFront extends Portal
     elseif ($result->num_rows < 1)
       $komunikat = 'Brak książek spełniających podane kryteria.';
       // Wyświetlenie rezultatów wyszukiwania
-    include 'templates/searchResult.php';
+    include 'templates/searchResults.php';
     }
     function showBookDetails() {
       // Sprawdzenie poprawności identyfikatora książki (parametr id)
@@ -162,6 +162,18 @@ class PortalFront extends Portal
       }
       }
       include 'templates/bookDetails.php';
+     }
+     function addToBasket() {
+      $basket = new Basket($this->dbo);
+      return $basket->add();
+     }
+     function showBasket() {
+      $basket = new Basket($this->dbo);
+      $basket->show('Zawartość koszyka', true);
+     }
+     function modifyBasket() {
+      $basket = new Basket($this->dbo);
+      $basket->modify();
      }
 }
 ?>
