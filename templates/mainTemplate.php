@@ -45,6 +45,7 @@
           break;
         case 'showSearchForm':
           //Wyświetlenie formularza rejestracyjnego
+          $portal->showSearchForm();
           break;
         case 'searchBook':
           //Wyszukanie książki
