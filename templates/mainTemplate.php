@@ -55,10 +55,10 @@
           $portal->showBookDetails();
           break;
         case 'showBasket':
-          //Wyświetlenie zawartości koszyka
+          $portal->showBasket();
           break;
         case 'checkout':
-          //Wyświetlenie podsumowania zamówienia
+          $portal->checkout();
           break;
         case 'showLoginForm': 
           // Wyświetlenie formularza logowania
